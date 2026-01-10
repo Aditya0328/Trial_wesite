@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="navbar">
+    <nav class="navbar">
 
         <div class="logo">AstraBytte</div>
         <div class="nav-links">
@@ -16,7 +16,7 @@
             <a href="#products">Products</a>
             <a href="#footer">Contact</a>
         </div>
-    </div>
+    </nav>
     <!-- Header Section -->
     <div id = "header">
         <div>
@@ -29,23 +29,22 @@
         </div>
             
         <div id = "header-buttons">
-            <button>Explore Dairy Solutions</button>
-            <button>Explore Lending Solutions</button>
+            <button onclick="window.open('https://dairy-farm-automation-swart.vercel.app/', '_blank')">Explore Dairy Solutions</button>
+            <button onclick="window.open('https://lending-automation-platform.vercel.app/', '_blank')">Explore Lending Solutions</button>
         </div>
     </div>
     <!-- Main Content Section -->
-     <div id="content">
+     <section id="content">
         <div>
             <h2>About AstraBytte</h2>
             <h4 style="margin-top: 10px;">Technology that connects the Real and Digital World</h4>
         </div>
-        <div >
+        <div>
         <p>
             AstraBytte is a new age SaaS company developing smart inteiligent tools for Agriculture and Finance Sectors.Our mission is to empower grassroots users from dairy farmers to small banks - with data, analytics and seamless work:
         </p>
         </div>
-        <div id="products"></div>
-        <div class="cards">
+        <div class="cards" id="products">
             <div class="card">
                 <h4>Dairy Automation Platform</h4>
                 <br>
@@ -55,9 +54,7 @@
                         <li>Breeding, Feed & Record Management</li>
                         <li>Farmer Mobile App + Cloud Dashboard</li>
                     </ul>
-                <a href="https://dairy-farm-automation-swart.vercel.app/">
-                <button class="card-button">View Dairy Tech Platform</button>
-                </a>
+                <button onclick="window.open('https://dairy-farm-automation-swart.vercel.app/', '_blank')" class="card-button">View Dairy Tech Platform</button>
             </div>
             <div class="card">
                 <h4>Lending Automation Platform</h4>
@@ -71,7 +68,7 @@
                 <button class="card-button">View Lending Tech Platform</button>
             </div>
         </div>
-     </div>
+     </section>
 
      <div class="section">
     <h2 style="margin-top: 20px;">Our Products</h2>
