@@ -29,22 +29,22 @@
         </div>
             
         <div id = "header-buttons">
-            <button onclick="window.open('https://dairy-farm-automation-swart.vercel.app/', '_blank')">Explore Dairy Solutions</button>
+            <button>Explore Dairy Solutions</button>
             <button onclick="window.open('https://lending-automation-platform.vercel.app/', '_blank')">Explore Lending Solutions</button>
         </div>
     </div>
     <!-- Main Content Section -->
-     <section id="content">
+     <div id="content">
         <div>
             <h2>About AstraBytte</h2>
-            <h4 style="margin-top: 10px;">Technology that connects the Real and Digital World</h4>
+            <h4 style="margin-top: 10px;" id="about">Technology that connects the Real and Digital World</h4>
         </div>
         <div>
         <p>
             AstraBytte is a new age SaaS company developing smart inteiligent tools for Agriculture and Finance Sectors.Our mission is to empower grassroots users from dairy farmers to small banks - with data, analytics and seamless work:
         </p>
         </div>
-        <div class="cards" id="products">
+        <div class="cards">
             <div class="card">
                 <h4>Dairy Automation Platform</h4>
                 <br>
@@ -68,15 +68,225 @@
                 <button class="card-button">View Lending Tech Platform</button>
             </div>
         </div>
-     </section>
+     </div>
 
-     <div class="section">
+<div class="section">
     <h2 style="margin-top: 20px;">Our Products</h2>
 
      <div class="products">
         <div class="product" onclick="showInfo('Analytics Engine')">Analytics Engine</div>
         <div class="product" onclick="showInfo('Workflow Automation')">Workflow Automation</div>
-        <div class="product" onclick="showInfo('API Integration')">API Integration</div>
+        <div class="product" onclick=<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AstraBytte | Smart Automation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">AstraBytte</div>
+      <div class="nav-links">
+        <a href="#header">Home</a>
+        <a href="#content">About Us</a>
+        <a href="#products-anchor">Products</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <header id="header">
+      <h1>Smart Automation for Dairy<br />& Lending Ecosystems</h1>
+      <p>
+        We help farmers, co-operatives, and financial institutions digitize
+        operations, reduce manual errors, and unlock efficiency.
+      </p>
+      <div id="header-buttons">
+        <button onclick="document.getElementById('content').scrollIntoView();">
+          Explore Dairy Solutions
+        </button>
+        <button
+          onclick="window.open('https://lending-automation-platform.vercel.app/', '_blank')"
+        >
+          Explore Lending Solutions
+        </button>
+      </div>
+    </header>
+
+    <section id="content">
+      <h2>About AstraBytte</h2>
+      <h4 id="about">Technology that connects the Real and Digital World</h4>
+      <p class="intro-text">
+        AstraBytte is a new age SaaS company developing smart intelligent tools
+        for Agriculture and Finance Sectors. Our mission is to empower
+        grassroots users—from dairy farmers to small banks—with data, analytics
+        and seamless workflow.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h4>Dairy Automation Platform</h4>
+          <ul>
+            <li>Animal Lifecycle & Heat Tracking</li>
+            <li>Milk Yield & Health Analytics</li>
+            <li>Breeding, Feed & Record Management</li>
+            <li>Farmer Mobile App + Cloud Dashboard</li>
+          </ul>
+          <button
+            onclick="window.open('https://dairy-farm-automation-swart.vercel.app/', '_blank')"
+            class="card-button"
+          >
+            View Dairy Tech Platform
+          </button>
+        </div>
+        <div class="card">
+          <h4>Lending Automation Platform</h4>
+          <ul>
+            <li>Loan Origination & Underwriting Engine</li>
+            <li>Policy Rule Automation</li>
+            <li>Credit Scorecard & Risk Insights</li>
+            <li>CRM + LOS + LMS Integration</li>
+          </ul>
+          <button class="card-button">View Lending Tech Platform</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="products-anchor">
+      <h2>Our Core Products</h2>
+      <div class="products">
+        <div class="product" onclick="showInfo('Analytics Engine')">
+          <h2>Analytics Engine</h2>
+          <p>
+            Turn raw farm and financial data into actionable insights with our
+            proprietary processing engine.
+          </p>
+        </div>
+        <div class="product" onclick="showInfo('Workflow Automation')">
+          <h2>Workflow Automation</h2>
+          <p>
+            Eliminate manual paperwork. Automate daily tasks from milk
+            collection to loan approvals.
+          </p>
+        </div>
+        <div class="product" onclick="showInfo('API Integration')">
+          <h2>API Integration</h2>
+          <p>
+            Connect seamlessly with existing banking systems and third-party
+            agricultural IoT sensors.
+          </p>
+        </div>
+        <div class="product" onclick="showInfo('AI Insights')">
+          <h2>AI Insights</h2>
+          <p>
+            Predictive modeling for animal health and credit risk using machine
+            learning algorithms.
+          </p>
+        </div>
+        <div class="product" onclick="showInfo('Cloud Dashboard')">
+          <h2>Cloud Dashboard</h2>
+          <p>
+            Centralized management for administrators to monitor performance
+            across multiple locations.
+          </p>
+        </div>
+        <div class="product" onclick="showInfo('Mobile App')">
+          <h2>Field Mobile App</h2>
+          <p>
+            Easy-to-use interface for farmers and field officers to input data
+            even in low-connectivity areas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer style="position: relative">
+      <div id="contact">
+        <h1>Contact Us</h1>
+
+        <div
+          id="success-overlay"
+          style="
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(207, 209, 208, 0.95);
+            z-index: 2000;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <dotlottie-player
+            id="tick-animation"
+            src="success.json"
+            background="transparent"
+            speed="1"
+            style="width: 300px; height: 300px"
+          >
+          </dotlottie-player>
+          <h2 style="color: #13a400; font-size: 2rem">Message Sent!</h2>
+        </div>
+
+        <form id="contact-form" onsubmit="handleFormSubmit(event)">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input
+            type="number"
+            name="phone"
+            placeholder="Your Phone Number"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      <div id="footer">© 2026 AstraBytte | Smart. Simple. Scalable.</div>
+    </footer>
+
+    <script>
+      function handleFormSubmit(event) {
+        event.preventDefault(); // Stop page refresh
+
+        const overlay = document.getElementById("success-overlay");
+        const player = document.getElementById("tick-animation");
+        const form = document.getElementById("contact-form");
+
+        // 1. Show the overlay covering the full footer
+        overlay.style.display = "flex";
+
+        // 2. Play the tick animation
+        player.play();
+
+        // 3. Hide after 2 seconds (2000ms)
+        setTimeout(() => {
+          overlay.style.display = "none";
+          form.reset(); // Optional: clears the form fields
+
+          // Optional: stop/reset animation so it's ready for next time
+          player.stop();
+        }, 2000);
+      }
+
+      // Keep your existing showInfo function below
+      function showInfo(productName) {
+        alert("More information about " + productName + " coming soon!");
+      }
+    </script>
+  </body>
+</html>
+"showInfo('API Integration')">API Integration</div>
         <div class="product" onclick="showInfo('AI Insights')">AI insights</div>
         <div class="product" onclick="showInfo('Cloud Dashboard')">Cloud Dashboard</div>
         <div class="product" onclick="showInfo('Cood App')">Cood App</div>
