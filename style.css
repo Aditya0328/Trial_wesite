@@ -98,6 +98,8 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
 
+        
+
         /* Content Section */
         #content {
             padding: 80px 10%;
@@ -125,9 +127,11 @@
         /* Cards Grid */
         .cards {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(3, 1fr); /* force 3 cards in one line */
             gap: 30px;
+   
         }
+
 
         .card {
             background: linear-gradient(135deg, #f0fff4, #dcfce7);
@@ -188,7 +192,7 @@
         /* Products Section */
         .section {
             padding: 80px 10%;
-            background-color: #f4f4f4;
+            background-color: #c9f7d9;
         }
 
         .section h2 {
@@ -216,20 +220,42 @@
         .product:hover {
             transform: translateY(-5px);
             border-bottom: 4px solid #28a745;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 20px rgba(124, 212, 172, 0.875);
         }
 
         .product h2 {
             font-size: 1.25rem;
             margin-bottom: 15px;
-            color: #333;
+            color: #97db95;
         }
 
         .product p {
             font-size: 0.9rem;
-            color: #666;
+            color: #8de285;
             line-height: 1.5;
         }
+
+        #why-choose-us {
+            background-color: #ffffff; /* clean white */
+            text-align: center;
+        }
+
+        #why-choose-us h2 {
+            color: #1a532b;
+            }
+
+        #why-choose-us .feature-list {
+            margin: 40px auto;
+            text-align: left;
+        }
+
+        .why-tagline {
+            margin-top: 30px;
+             font-size: 1.2rem;
+             font-weight: 600;
+             color: #28a745;
+        }
+
 
         /* Contact Section */
         #contact {
@@ -288,3 +314,23 @@
             .nav-links { display: none; } /* Simplified for mobile */
             #header h1 { font-size: 2rem; }
         }
+
+        /* Feature & Industry Lists */
+            .feature-list,
+            .industry-list {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0 40px;
+        max-width: 900px;
+        
+        }
+
+            .feature-list li,
+            .industry-list li {
+        display: flex;
+         align-items: center;
+        gap: 14px;
+        margin-bottom: 14px;
+        font-size: 1.05rem;
+        line-height: 1.6;
+}
